@@ -1,0 +1,17 @@
+{
+  "name": "themeserver",
+  "version": "1.0.0",
+  "description": "serve AI image urls and color scheme to clients",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "falldeaf",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "microcommander": "^1.2.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.4.0"
+  }
+}

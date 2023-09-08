@@ -1,0 +1,87 @@
+{
+	"colors": [
+		{
+		"name": "Teal",
+		"hex": "#008080"
+		},
+		{
+		"name": "Coral",
+		"hex": "#FF6F61"
+		},
+		{
+		"name": "Lavender",
+		"hex": "#E6E6FA"
+		},
+		{
+		"name": "Chartreuse",
+		"hex": "#7FFF00"
+		},
+		{
+		"name": "Rose",
+		"hex": "#FF007F"
+		},
+		{
+		"name": "Indigo",
+		"hex": "#4B0082"
+		},
+		{
+		"name": "Saffron",
+		"hex": "#F4C430"
+		},
+		{
+		"name": "Cyan",
+		"hex": "#00FFFF"
+		},
+		{
+		"name": "Amber",
+		"hex": "#FFBF00"
+		},
+		{
+		"name": "Olive",
+		"hex": "#808000"
+		}
+	],
+	"subjects": [
+		{
+			"name": "rain"
+		},
+		{
+			"name": "orange"
+		},
+		{
+			"name": "honey bee"
+		},
+		{
+			"name": "ramen"
+		},
+		{
+			"name": "sushi"
+		},
+		{
+			"name": "storm"
+		},
+		{
+			"name": "wave"
+		},
+		{
+			"name": "video game"
+		}
+	],
+	"styles": [
+		{
+			"name": "minimalist"
+		},
+		{
+			"name": "pixel art"
+		},
+		{
+			"name": "watercolor"
+		},
+		{
+			"name": "art Nouveau"
+		},
+		{
+			"name": "surrealism"
+		}
+	]
+}

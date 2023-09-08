@@ -1,0 +1,7 @@
+{
+  "crons": {},
+  "switches": {
+    "mycron": true,
+    "pause": false
+  }
+}
