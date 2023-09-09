@@ -33,15 +33,20 @@ async function checkGenerationComplete(generationId, authorizationToken, maxAtte
 	};
 
 	while (maxAttempts > 0) {
-	const response = await fetch(`https://cloud.leonardo.ai/api/rest/v1/generations/${generationId}`, getOptions);
-	const jsonResponse = await response.json();
+		try {
+			const response = await fetch(`https://cloud.leonardo.ai/api/rest/v1/generations/${generationId}`, getOptions);
+			const jsonResponse = await response.json();
 
-	if (jsonResponse.generations_by_pk.status === 'COMPLETE') {
-		return jsonResponse;
-	}
+			if (jsonResponse.generations_by_pk.status === 'COMPLETE') {
+				return jsonResponse;
+			}
+		} catch (error) {
+			console.error(`Error occurred: ${error}`);
+		}
 
-	maxAttempts--;
-	await new Promise(resolve => setTimeout(resolve, 4000));
+
+		maxAttempts--;
+		await new Promise(resolve => setTimeout(resolve, 4000));
 	}
 
 	throw new Error('Max attempts reached. Generation is not complete.');

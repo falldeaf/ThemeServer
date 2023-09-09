@@ -2,13 +2,13 @@ const getimage = require('./leonardo2.js');
 const getprompts = require('./gptdescriber.js');
 const microcommander = require('microcommander');
 
-const mc = new microcommander('config.json', 'my-service', 5600, false);
+const mc = new microcommander('config.json', 'theme-server', 5600, false);
 
 let current_images = {};
 
 mc.defineLog('mylog', 50, 'Logs');
 
-mc.defineJson('currentimages', current_images, 'JSON');
+mc.defineJson('currentimages', () =>{ return current_images; }, 'JSON');
 
 mc.defineSwitch('pause', false, 'Switches');
 
